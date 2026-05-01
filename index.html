@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <!-- 关键：让手机自适应屏幕 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>谁是卧底 - 查看词语</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+    <body>
+        <div class="card">
+            <p>您的词语是</p>
+            <div id="word">风林火山</div>
+            <p>请不要透露给其他人</p>
+        </div>
+
+
+        
+        <script>
+            const theWord = (new URLSearchParams(window.location.search)).get('word');
+            console.log(theWord);
+            
+            const decodeWord = decodeURIComponent(theWord);
+            console.log(decodeWord);
+
+            document.getElementById('word').textContent = decodeWord;
+        </script>
+
+    </body>
+</html>
