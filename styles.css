@@ -1,7 +1,7 @@
 body{
     min-height:100vh;
     overflow: hidden;
-    background: linear-gradient(135deg, #88ffff, #ffff88, #ff88ff);
+    background: linear-gradient(135deg, #FF7B29, #FF6B8B);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body{
     border-radius: 20px;
     border: 15px solid #fff;
     box-shadow: 0px 15px 15px rgba(128, 128, 128, 0.25);
-    background: linear-gradient(135deg, #ffffee, #ffeeff, #eeffff);
+    background: #FFF5F0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,11 +24,12 @@ body{
 
 .card p{
     font-size: large;
-    color: #888;
+    color: #666666;
 }
 
 #word{
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
+    color: #FF7B29;
 }
