@@ -33,3 +33,9 @@ body{
     text-align: center;
     color: #FF7B29;
 }
+
+#num{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF7B29;
+}

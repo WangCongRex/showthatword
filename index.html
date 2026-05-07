@@ -12,9 +12,9 @@
     </head>
     <body>
         <div class="card">
-            <p>您的词语是</p>
-            <div id="word">风林火山</div>
-            <p>请不要透露给其他人</p>
+            <p><span id="num">1</span>号玩家，您的词语是：</p>
+            <div id="word">风林火山</div>            
+            <p>请不要透露给其他人。</p>
         </div>
 
 
@@ -27,6 +27,16 @@
             console.log(decodeWord);
 
             document.getElementById('word').textContent = decodeWord;
+
+
+            const thenum = (new URLSearchParams(window.location.search)).get('num');
+            console.log(thenum);
+            
+            const decodeNum = decodeURIComponent(thenum);
+            console.log(decodeNum);
+
+            document.getElementById('num').textContent = decodeNum;
+
         </script>
 
     </body>
